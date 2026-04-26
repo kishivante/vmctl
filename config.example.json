@@ -1,0 +1,5 @@
+{
+  "base_url": "https://PROXMOX_IP:8006",
+  "token": "root@pam!vmctl=YOUR_TOKEN_SECRET",
+  "node": "pve"
+}
