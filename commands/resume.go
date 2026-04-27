@@ -1,16 +1,21 @@
 package commands
 
 import (
+	"fmt"
 	"vmctl/config"
 	"vmctl/proxmox"
 )
 
-func BackupVM() {
+func ResumeVM() {
 	cfg, _ := config.LoadConfig()
+
 	client := proxmox.Client{
 		BaseURL: cfg.BaseURL,
-		CACert:  cfg.CACert,
+		Token:   cfg.Token,
 	}
 
-	client.BackupVM(cfg.Node, 102)
+	err := client.ResumeVM(cfg.Node, 102)
+	if err != nil {
+		fmt.Println("Hata:", err)
+	}
 }

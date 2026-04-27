@@ -9,6 +9,7 @@ type Config struct {
 	BaseURL string `json:"base_url"`
 	Token   string `json:"token"`
 	Node    string `json:"node"`
+	CACert  string `json:"ca_cert"`
 }
 
 func LoadConfig() (*Config, error) {
