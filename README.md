@@ -2,6 +2,8 @@
 
 Proxmox API üzerinden VM oluşturma, clone, backup ve monitoring yapan CLI aracı.
 
+Şu an sadece create test ettim. Diğer araçları da daha sonra güncelleyip ekleyeceğim.
+
 ## Kurulum
 
 ```bash
